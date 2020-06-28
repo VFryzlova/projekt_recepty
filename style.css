@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+*, :after, :before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+.paticka {
+  text-align: center;
+  font-size: 14px;
+  color: silver;
+}
+.paticka a {
+  color: silver;
+}
+h1{
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  margin: 0;
+  font-size: 28px;
+  text-shadow: 1px 1px 1px black;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.recepty {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90px;
+  background-color: tomato;
+  background-position: center;
+  background-size: cover;
+}
+.kategorie{
+ float: left;
+}
+.komentare{
+ float: right;
+}
+.male-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.male-wrapper .recepty{
+  border-top: 1px solid white;
+}
+.male-wrapper h1{
+  margin: 0;
+  font-size: 18px;
+}
+.velke{
+  min-height: 200px;
+}
+@media (min-width: 480px) {
+  .male-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .male-wrapper .recepty{
+    width: 50%;
+    min-height: 150px;
+  }
+  .male-wrapper .recepty.postranni-border{
+    border-right: 1px solid white;
+  }
+  .velke{
+    min-height: 250px;
+  }
+  .recepty {
+    padding: 20px;
+  }
+  h1{
+    font-size: 36px;
+  }
+  .male-wrapper h1{
+    font-size: 22px;
+  }
+}
+@media (min-width: 860px) {
+.wrapper{
+  flex-direction: row;
+}
+  .male-wrapper .recepty{
+    min-height: 200px;
+  }
+  .male-wrapper .recepty.vrchni-border{
+    border-top: 0;
+  }
+  .velke{
+    min-height: 400px;
+    border-right: 1px solid white;
+  }
+  h1{
+    font-size: 48px;
+  }
+  .male-wrapper h1{
+    font-size: 28px;
+  }
+}
